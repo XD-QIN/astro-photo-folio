@@ -1,6 +1,8 @@
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
 import mdx from '@astrojs/mdx';
+// Declared as a direct dependency: since Astro 7.3 it is a peer dependency of
+// `astro` and `@astrojs/mdx` (which renders .mdx through this processor).
 import { unified } from '@astrojs/markdown-remark';
 
 // https://astro.build/config
